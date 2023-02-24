@@ -21,7 +21,7 @@ public class Test01 extends BaseClass {
 	public void test01(String un , String pwd) {
 		LoginPages lg = new LoginPages(driver);
 		lg.enterCred(un , pwd);
-		System.out.println("Iteration over");
+		System.out.println("Iteration got over");
 	}
 	
 
