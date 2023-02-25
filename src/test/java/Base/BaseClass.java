@@ -25,7 +25,7 @@ public class BaseClass {
 	@BeforeClass
 	public static void startTest()
 	{
-	report = new ExtentReports(System.getProperty("user.dir")+"\\ExtentReportResults.html");
+	report = new ExtentReports(System.getProperty("user.dir")+"\\Reports\\ExtentReportResults.html");
 	test = report.startTest("ExtentDemo");
 	}
 	
