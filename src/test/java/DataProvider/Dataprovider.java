@@ -17,7 +17,8 @@ public class Dataprovider {
 		XSSFSheet sheet = wb.getSheetAt(0);
 		int row = sheet.getPhysicalNumberOfRows();
 		System.out.println(row);
-		Object Data[][]= new Object[row][2];
+		int cols = sheet.getRow(0).getPhysicalNumberOfCells();
+		Object Data[][]= new Object[row][cols];
 		for (int i=0;i<row;i++) {
 			int col = sheet.getRow(i).getPhysicalNumberOfCells();
 			for (int j=0;j<col;j++) {
