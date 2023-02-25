@@ -42,7 +42,7 @@ public void setUp() throws Exception {
 	@AfterMethod()
 	public void tearDown() {
 		
-		test.log(LogStatus.PASS, "Quit Driver");
+		test.log(LogStatus.PASS, "Quit Driver instance");
 		driver.quit();
 	
 	}
